@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #181818;
+  color: #f4f7f7;
+}
+
+header {
+  background-color: #fff1b9;
+  color: #272625;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+  margin-top: 10px;
+}
+
+section {
+  font-size: 24px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 80px;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.hobby-card {
+  background-color: #2c2c2c;
+  box-shadow: 0 4px 8px #000000;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  width: 900px;
+  height: 450px;
+  box-sizing: border-box;
+}
+
+.hobby-card:hover {
+  transform: scale(1.10);
+}
+
+.hobby-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  padding: 30px;
+  margin-right: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.hobby-card h2 {
+  padding: 30px;
+  font-size: 32px;
+  margin: 0;
+  color: #fff1b9;
+}
+
+.hobby-card p {
+  font-size: 22px;
+  color: #f4f7f7;
+  margin: 0;
+}
+
+.hobbies-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.hobby-card-small {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  width: 500px;
+  box-sizing: border-box;
+}
+
+.hobby-card-small:hover {
+  transform: scale(1.10);
+}
+
+.hobby-card-small .hobby-image {
+  width: 80px;
+  height: 80px;
+  padding: 30px;
+  filter: brightness(0) invert(1);
+}
+
+.hobby-card-small h2 {
+  font-size: 32px;
+  margin: 0;
+  color: #fff1b9;
+}
+
+.hobby-card-small p {
+  font-size: 22px;
+  color: #f4f7f7;
+  margin: 0;
+}
+
+footer {
+  font-size: 24px;
+  background-color: #fff1b9;
+  color: #272625;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  margin-top: 40px;
+}
+
+a {
+  color: #1E90FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .hobbies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hobbies-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .hobby-card,
+  .hobby-card-small {
+    width: 100%;
+  }
+}
