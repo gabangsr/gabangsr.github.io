@@ -6,23 +6,22 @@ body {
   padding: 0;
   background-color: #181818;
   color: #f4f7f7;
+  transition: background-color 0.6s, color 0.6s;
 }
 
 header {
   background-color: #fff1b9;
   color: #272625;
-  padding: 50px 0;
+  padding: 50px;
   text-align: center;
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
   font-size: 80px;
   margin-top: 30px;
 }
 
 h2 {
-  font-family: 'Poppins', sans-serif;
   font-size: 45px;
   margin-top: 10px;
 }
@@ -92,7 +91,7 @@ section {
 .about-me-image:hover,
 .about-me-content:hover,
 .about-me-description:hover {
-  transform: scale(1.10);
+  transform: scale(1.50);
 }
 
 @keyframes shiver {
@@ -100,14 +99,14 @@ section {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
   }
 }
 
 .about-me-content h2, .about-me-description h2 {
   font-size: 50px;
   margin: 0;
-  animation: shiver 5s infinite;
+  animation: shiver 3s infinite;
 }
 
 footer {
@@ -150,24 +149,5 @@ a:hover {
   text-align: center;
 }
 
-.contact h2 {
-  margin-top: 0;
-}
 
-@media (max-width: 768px) {
-  .about-me {
-    flex-direction: column;
-  }
 
-  .about-me-image,
-  .about-me-content,
-  .about-me-description {
-    width: 100%;
-    height: auto;
-  }
-  
-  .contact {
-    width: 100%;
-    padding: 20px;
-  }
-}
